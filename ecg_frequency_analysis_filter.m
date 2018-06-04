@@ -14,6 +14,7 @@ for filename ={listing.name}
         plot(fl,yl,'r','LineWidth',2);
         xlabel('Frequency/Hz');ylabel('Amplitude')
         y=filter(Hd,DATA1)
+        save([path_str,namestr,'.mat'],'y')
         figure(3);
         plot(y);
         DATA1=y
